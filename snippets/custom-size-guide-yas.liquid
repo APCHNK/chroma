@@ -1,0 +1,71 @@
+<style>
+  @media(max-width: 470px)
+{
+  .product__info-wrapper button.product-form__submit.button
+  {
+    margin-bottom: 53px;
+    height: 60px;
+    background: #B59E5F;
+    font-size: 20px;
+  }
+  .product__info-container .product-form, .product__info-container .product__description
+  {
+    margin-top: 13px;
+ 
+  }
+  .select__select, .customer select {
+  height: 60px;
+    font-size: 20px;
+  }
+  .product-form__input .select
+  {
+    margin-bottom: 13px;
+    
+    max-width: 100%;
+  }
+  .yas_product-main .variant-select-yas-wrapp
+  {
+    display: block;
+  }
+  .yas_product-main .variant-select-yas-wrapp .size-btn-yas
+  {
+   margin-top: 13px;
+    border: 3px solid #B59E5F;
+    color: #B59E5F;
+    font-size: 20px;
+    font-family: CentraNo2-Bold;
+    padding-top: 10px;
+    text-transform: uppercase;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    
+  }.product-form__input
+  
+  {
+    margin-left: 0;
+    max-width: 100%;
+  }
+} 
+</style>
+<a href="#"  data-toggle="modal" data-target="#size-guide-detail"><div class="size-btn-yas">Size Guide</div></a>
+
+<!-- basic modal  -->
+<div class="modal fade" id="size-guide-detail" tabindex="-1" role="dialog" aria-labelledby="size-guide-detail" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+               <h4 class="modal-title" id="myModalLabel">Size Guide</h4>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><u>CLOSE</u></span>
+              </button>
+             </div>
+            <div class="modal-body">
+             <img src="{{ image | img_url: 'x2000' }}" class="size-guide-info">
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+</div>
