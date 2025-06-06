@@ -71,14 +71,14 @@ class YasCustomSelectLook extends HTMLElement {
 
   onVariantChange() {
     this.onclick_variant()
-    this.toogleSelect();
+    this.toggleSelect();
     
     //this.indexProd();
    // this.updateImageVar();
   }
 
 
-  toogleSelect(){
+  toggleSelect(){
     this.selectOpen = this.querySelector('.custom-select-form-wrapp').getAttribute('data-open');
     if(this.selectOpen != 'true'){
       this.querySelector('.custom-select-form-wrapp').setAttribute('data-open', 'true');
