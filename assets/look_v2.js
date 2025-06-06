@@ -308,18 +308,18 @@ class YasCustomSelectLook extends HTMLElement {
       if(window.innerWidth < 1100){
         this.active_prod =  this.parent_wrapp.querySelector('.yas-look-slider-mobile[style="display: flex;"]').swiper.slides[this.parent_wrapp.querySelector('.yas-look-slider-mobile[style="display: flex;"]').swiper.activeIndex];
         this.onclick_variantMob();
-        this.toogleSelect();
+        this.toggleSelect();
         this.updateIdItem2();
       }else{
         this.indexProd();
         this.onclick_variant()
-        this.toogleSelect();
+        this.toggleSelect();
         this.updateIdItem();
       }
       
     }else{
       this.onclick_variant();
-      this.toogleSelect();
+      this.toggleSelect();
       this.size_window();
     }
 
@@ -327,7 +327,7 @@ class YasCustomSelectLook extends HTMLElement {
   }
 
 
-  toogleSelect(){
+  toggleSelect(){
     this.selectOpen = this.querySelector('.custom-select-form-wrapp').getAttribute('data-open');
     if(this.selectOpen != 'true'){
       this.querySelector('.custom-select-form-wrapp').setAttribute('data-open', 'true');

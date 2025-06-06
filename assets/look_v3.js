@@ -204,7 +204,7 @@ class YasCustomSelectLook extends HTMLElement {
     window.addEventListener("resize", this.size_window);
 
     
-    this.addEventListener('click', this.toogleSelect);
+    this.addEventListener('click', this.toggleSelect);
     this.querySelectorAll('.popcustom_select-var').forEach( () => {
       this.addEventListener('click', this.onVariantChange);
     })
@@ -234,7 +234,7 @@ class YasCustomSelectLook extends HTMLElement {
 
   
 
-  toogleSelect(){
+  toggleSelect(){
     this.selectOpen = this.querySelector('.custom-select-form-wrapp').getAttribute('data-open');
     if(this.selectOpen != 'true'){
       this.querySelector('.custom-select-form-wrapp').setAttribute('data-open', 'true');
